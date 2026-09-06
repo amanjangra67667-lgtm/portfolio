@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        height: 80px;
+        background: linear-gradient(90deg, #ffffff, #e8f3ff, #b9dcff)
+    }
+
+    header img{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        margin-top: -105px;
+    }
+
+    header h2{
+        margin-left: 90px;
+        margin-top: 2px;
+    }
+
+    header ul{
+        list-style-type: none;
+        padding: 0;
+        margin-left: 550px;
+        margin-top: -65px;
+    }
+    header ul li{
+       display: inline-block;
+       margin-left: 80px;
+       padding: 0;
+       text-decoration: none;
+       font-size: 17px;
+    }
+    header ul li a{
+        text-decoration: none;
+        color: black;
+    }
+    header ul li a:hover{
+        color: #fff;
+        transform: scale(1.2);
+        transition: 0.1s;
+        border: 1px solid blue;
+        border-radius: 5px;
+        padding: 8px;
+        background-color: blue;
+    }
+
+    header .btn{
+        float: right;
+        margin-top: -43px;
+        margin-right: 50px;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: darkblue;
+        color: #fff;
+        padding: 5px;
+        border-radius: 5%;
+    }
+   
+    .wel h4{
+        margin-left: 100px;
+        font-size: 20px;
+        color: darkblue;
+    }
+    .main h1{
+        margin-left: 100px;
+        margin-top: -35px;
+    }
+    .para p{
+        margin-left: 100px;
+        margin-top: -25px;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    .exp{
+        margin-left: 100px;
+        font-size: 13px;
+        font-weight: bold;
+        padding: 5px;
+        background-color: darkblue;
+        color: #fff;
+        border: 1px solid darkblue;
+        border-radius: 5px;
+    }
+    .mine{
+        margin-left: 20px;
+        font-size: 13px;
+        padding: 5px;
+        color: darkblue;
+        border: 2px solid darkblue;
+         border-radius: 5px;
+    }
+    .tag p{
+      margin-left: 35%;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    
+    .container ul{
+        list-style-type: none;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+    .container ul li{
+        display: inline-block;
+        border-radius: 5px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        font-size: 18px;
+    }
+    .img1 img{
+        position: absolute;
+        width: 140px;
+        height: 140px;
+        margin-top: -160px;
+        margin-left: 270px;
+    }
+    .img2 img{
+        position: absolute;
+        width: 140px;
+        height: 140px;
+        margin-left: 620px;
+        margin-top: -170px;
+    }
+    .img3 img{
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        margin-top: -170px;
+        margin-left: 970px;
+    }
+    .img4 img{
+        position: absolute;
+        width: 170px;
+        height: 170px;
+        margin-top: -180px;
+        margin-left: 1330px;
+    }
+    .items ul{
+        list-style-type: none;
+        display: flex;
+        margin-left: 100px;
+    }
+    .items ul li{
+        display: inline-block;
+        margin-left: 20px;
+        border-radius: 5px;
+    }
+    .classic p{
+        margin-left: 35%;
+        font-size: 20px;
+    }
+    .text1 p{
+        font-weight: bold;
+        margin-left: 165px;
+        color: darkgreen;
+    }
+    .text2 p{
+        font-weight: bold;
+        color: orange;
+        margin-left: 500px;
+        margin-top: -35px;
+    }
+     .text3 p{
+        font-weight: bold;
+        color: purple;
+        margin-left: 748px;
+        margin-top: -35px;
+    }
+     .text4 p{
+        font-weight: bold;
+        color: brown;
+        margin-left: 980px;
+        margin-top: -35px;
+    }
+     .text5 p{
+        font-weight: bold;
+        color: darkblue;
+        margin-left: 1205px;
+        margin-top: -35px;
+    }
+    .miner{
+        margin-left: 45.5%;
+        background-color: darkblue;
+        color: #fff;
+        border-radius: 5px;
+        padding: 5px;
+        letter-spacing: 2px;
+        font-size: 13px;
+    }
+    .many p{
+        margin-left: 100px;
+        padding-top: 15px;
+     }
+     .quick p{
+        position: absolute;
+        margin-left: 540px;
+        margin-top: -145px;
+        color: yellow;
+     }
+     .quick a{
+        color: #fff;
+        text-decoration: none;
+     }
+     .const p{
+        margin-left: 850px;
+        margin-top: -145px;
+        color: yellow;
+     }
+    
+     .massive p{
+        font-size: 18px;
+        margin-left: 1250px;
+        margin-top: -150px;
+        color: yellow;
+     }
+     .power img{
+        width: 40px;
+        height: 40px;
+        margin-left: 1210px;
+     }
+      .power2 img{
+        width: 40px;
+        height: 40px;
+        margin-left: 1260px;
+        margin-top: -44px;
+        position: absolute;
+     }
+      .power3 img{
+        width: 37px;
+        height: 40px;
+        margin-left: 1310px;
+        margin-top: -44px;
+        position: absolute;
+     }
+     .power4 img{
+        width: 40px;
+        height: 40px;
+        margin-left: 1360px;
+        margin-top: -44px;
+        position: absolute;
+     }
+     .last{
+        border: 1px solid rgb(1, 1, 85);
+        background-color: rgb(1, 1, 62);
+     }
+     .last p{
+        color: #fff;
+        margin-left: 550px;
+     }
+     .location img{
+        height: 40px;
+        width: 40px;
+        margin-left: 803px;
+        margin-top: -52px;
+        position: absolute;
+     }
+     .contact img{
+        width: 25px;
+        height: 25px;
+        margin-left: 810px;
+        margin-top: -10px;
+        position: absolute;
+     }
+     .email img{
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        margin-left: 810px;
+        margin-top: 30px;
+     }
+     .master img{
+        position: absolute;
+        height: 190px;
+        width: 290px;
+        margin-left: 1120px;
+        margin-top: 220px;
+        
+     }
+     .yester img{
+        position: absolute;
+        width: 320px;
+        height: 370px;
+        margin-left: 800px;
+        margin-top: 100px;
+     }
+     .minimum img{
+        position: absolute;
+        width: 320px;
+        height: 170px;
+        margin-left: 1000px;
+        margin-top: 55px;
+     }
+     .tractor img{
+        position: absolute;
+        height: 130px;
+        width: 200px;
+        margin-top: -190px;
+        margin-left: 170px;
+     }
+     .species img{
+        position: absolute;
+        height: 130px;
+        width: 200px;
+        margin-top: -190px;
+        margin-left: 420px;
+     }
+     .textile img{
+        position: absolute;
+        width: 232px;
+        height: 150px;
+        margin-top: -200px;
+        margin-left: 663px;
+        border: 2px solid #e8e0ff;
+        border: 1px solid purple;
+        border-radius: 5px;
+     }
+     .handicraft img{
+        position: absolute;
+        width: 229px;
+        height: 149px;
+        margin-top: -199px;
+        margin-left: 916px;
+        border-radius: 5px;
+     }
+     .industrial img{
+        position: absolute;
+        height: 151px;
+        width: 232px;
+        margin-top: -200px;
+        margin-left: 1164px;
+        border: 1px solid blue;
+        border-radius: 5px;
+         }
+         marquee{
+            margin-top: 35px;
+            font-weight: bold;
+            font-size: 18px;
+            color: #1d3f8f;
+            opacity: 80%;
+         }
+     </style>
+<body>
+    <header>
+        <h2><span style="color: darkblue; font-size: 43px;">JANGRA</span><br> <span style="color: red; font-size: 18px; letter-spacing: 1px;" >EXPORTS & IMPORTS </span></h2>
+         <img src="images/global.png">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="C:\Users\HP\OneDrive\Desktop\College task\About us.html" target="_blank">ABOUT US</a></li>
+                <li><a href="C:\Users\HP\OneDrive\Desktop\College task\Service.html" target="_blank">SERVICES</a></li>
+                <li><a href="C:\Users\HP\OneDrive\Desktop\College task\Contact us.html" target="_blank">CONTACT US</a></li>
+            </ul>
+        </nav>
+               <button class="btn">GET A QUOTE</button>
+               <marquee behavior="scroll" direction="left" scrollmount="30">🌍JANGRA EXPORTS & IMPORTS- Quality Products. Trusted Global Trade. Worldwide Delivery</marquee>
+ 
+    </header><br>
+    <div class="yester"> <img src="images/favpng_8d2a6a5e73e54991b84b72ed5e296a53.png"></div>
+    <div class="master"><img src="images/vecteezy_ai-generated-blue-semi-truck-with-trailer-isolated-on_35907415.png"></div>
+    <div class="minimum"><img src="images/pngegg.png"></div>
+    
+
+    <div class="all-contain" style="border: 1px; margin-top: 50px; padding-bottom: 20px; padding-top: 20px; background: linear-gradient(90deg, #ffffff, #e8f3ff, #b9dcff)">
+    <div class="wel"><h4>WELCOME TO</h4></div>
+    <Div class="main"><h1><span style="color: darkblue; font-size: 80px;">JANGRA </span> <br> <span style="color: red; letter-spacing: 2px;">EXPORTS & IMPORTS </span></h1></Div><br> <br>
+
+    <div class="para"><p>Delivering quality products worldwide<br>Your trusted partner in global trade.</p></div>
+    <div class="hello"><button class="exp">EXPLORE PRODUCTS ></button> <button class="mine">CONTACT US</button></div>
+    </div>
+    <div class="tag"><p>__________________ WHY CHOOSE US __________________</p></div>
+    <div class="container">
+        <ul>
+
+            <li style="border: 1px solid black; padding: 5px; width: 300px; height: 150px; padding-left: 8px;"><span style="font-size: 17px; color: darkblue;"><b>QUALITY ASSURANCE </span></b><br><br>We ensure the highest<br>quality standards for<br>all our products</li><br>
+                        <li style="border: 1px solid grey; padding: 5px; width: 300px; height: 150px; padding-left: 8px;"><b><span style="font-size: 17px; color: green;">TRUST & RELIABILITY </span></b><br><br>Building long-term<br>relationships through<br>trust and transparency</li><br>
+                                    <li style="border: 1px solid grey; padding: 5px; width: 300px; height: 150px; padding-left: 8px;"><b><span style="font-size: 17px; color: darkblue;">GLOBAL NETWORK </span></b><br><br>Strong global presence<br>to serve our customers<br>worldwide</li><br>
+                                                <li style="border: 1px solid grey; padding: 5px; width: 300px; height: 150px; padding-left: 8px;"><b><span style="font-size: 17px; color: orange;">EXPERIENCED TEAM </span></b><br><br>Our experienced team<br>is always ready to<br>meet your needs.</li>
+        </ul>
+    </div>
+    <div class="img1"><img src="images/quality1.png"></div>
+    <div class="img2"><img src="images/hand shake.png"></div>
+    <div class="img3"><img src="images/global.png"></div>
+    <div class="img4"><img src="images/exper..png"></div>
+    <hr>
+    <div class="classic"><p><b>__________________ OUR PRODUCTS __________________ </b></p></div>
+    <div class="items">
+        <ul>
+            <li style="border: 1px solid green; width: 230px; height: 150px; background-color: #dff2e1;"></li>
+              <li style="border: 1px solid rgb(253, 253, 3); width: 230px; height: 150px; background-color: #fff0cc;"></li>
+              <li style="border: 1px solid purple; width: 230px; height: 150px; background-color:#e8e0ff ;"></li>
+              <li style="border: 1px solid orange; width: 230px; height: 150px; background-color: #fce8dc;"></li>
+              <li style="border: 1px solid darkblue; width: 230px; height: 150px; background-color: #ddeeff;"></li>
+        </ul>
+    </div>
+    <div class="text1"><p>AGRICULTURAL PRODUCTS</p></div>
+    <div class="text2"><p>SPECIES</p></div>
+    <div class="text3"><p>TEXTILES</p></div>
+    <div class="text4"><p>HANDICRAFTS</p></div>
+    <div class="text5"><p>INDUSTRIAL GOODS</p></div>
+
+    <div class="tractor"><img src="images/tractor.jpeg"></div>
+    <div class="species"><img src="images/spices.jpeg"></div>
+    <div class="textile"><img src="images/textile.png"></div>
+    <div class="handicraft"><img src="images/handicraft.png"></div>
+    <div class="industrial"><img src="images/industrial.jpeg"></div>
+
+    <button class="miner">VIEW ALL PRODUCTS</button>
+    <div class="main footer" style="background-color: rgb(3, 3, 78);">
+    <footer>
+        <div class="many"><p><b><span style="font-size: 18px; color:yellow;">ABOUT US</span></b><br><br><span style="color: #fff;">JANGRA EXPORTS & IMPORTS is a<br>trusted global trading company<br>dealing in wide range of products<br>with commitment to quality and<br>customer satisfaction.</p></span></div>
+        <div class="quick"><p><b><span style="font-size: 18px;">QUICK LINKS </span></b><br><br><span style="color: #fff;"><a href="#">< Home</a><br><a href="C:\Users\HP\OneDrive\Desktop\College task\About us.html">< About us</a><br><a href="#">< Services</a><br><a href="C:\Users\HP\OneDrive\Desktop\College task\Contact us.html">< Contact us</a></p></span></div>
+        <div class="const"><P><b><span style="font-size: 18px;">CONTACT US </span></b><br><br><span style="color: #fff;">Hisar, Haryana, India<br><br>+91 8571019311<br><br>info@jangraexportsimports.com</P></span></div>
+        <div class="massive"><p><b>FOLLOW US</b></p></div>
+        <div class="image">
+            <div class="power"><a href="#"><img src="images/facebbok.png"></a></div>
+            <div class="power2"><a href="https://www.linkedin.com/in/aman-jangra-49b679433" target="_blank"><img src="images/linkdln.png"></a></div>
+            <div class="power3"><a href="#"><img src="images/insta.png"></a></div>
+            <div class="power4"><a href="#"><img src="images/whattsap.png"></a></div>
+        </div>
+        <div class="location"><img src="images/address1.png"></div>
+        <div class="contact"><img src="images/location.png"></div>
+        <div class="email"><img src="images/eamil.png"></div>
+    </footer><br><br><br><br><br>
+    </div>
+    
+    <div class="last">
+        <p>&copy;2026 JANGRA EXPORTS & IMPORTS. All Right Reserved.</p>
+    </div>
+
+
+</body>
+</html>
